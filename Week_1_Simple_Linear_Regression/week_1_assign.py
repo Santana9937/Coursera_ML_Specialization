@@ -108,6 +108,22 @@ estimated_squarefeet = inverse_regression_predictions(my_house_price, sqft_inter
 print
 print "The estimated squarefeet for a house worth $%.2f is %d" % (my_house_price, estimated_squarefeet)	
 
+# Estimate the slope and intercept for predicting 'price' based on 'bedrooms'
+(bedrm_intercept, bedrm_slope) = simple_linear_regression(train_data['bedrooms'].values, train_data['price'].values)
+print 
+print "Intercept: " + str(bedrm_intercept)
+print "Slope: " + str(bedrm_slope)
+
+# Compute RSS when using bedrooms on TEST data:
+rss_prices_on_test_bedrm = get_residual_sum_of_squares(test_data['bedrooms'].values, test_data['price'].values, bedrm_intercept, bedrm_slope)
+print
+print 'The RSS of predicting Prices based Test Data on Bedrooms is : ' + str(rss_prices_on_test_bedrm)
+
+# Compute RSS when using squarfeet on TEST data:
+rss_prices_on_test_sqft = get_residual_sum_of_squares(test_data['sqft_living'].values, test_data['price'].values, sqft_intercept, sqft_slope)
+print
+print 'The RSS of predicting Prices based Test Data on Square Feet is : ' + str(rss_prices_on_test_sqft)
+
 
 print
 print 'Done!'
