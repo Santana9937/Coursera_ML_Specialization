@@ -1,4 +1,4 @@
-### Week 1 assignment of Coursera Machine Learning: Regression course from the Universion of Washington.
+### Week 1 assignment for Coursera Machine Learning: Regression course from the University of Washington.
 
 ### Ipython notebook for Simple Linear Regression
 
