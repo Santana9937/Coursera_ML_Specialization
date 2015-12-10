@@ -1,6 +1,7 @@
 ### Week 1 assignment for Coursera Machine Learning: Regression course from the University of Washington.
 
 ### Ipython notebook for Simple Linear Regression
+http://nbviewer.ipython.org/github/Santana9937/Regression_ML_Specialization/blob/master/Week_1_Simple_Linear_Regression/week-1-simple-regression-assignment.ipynb
 
 
 In this notebook, we will use data on house sales in King County, Seattle to predict house prices using simple (one input) linear regression. You will:
