@@ -1,5 +1,4 @@
-### Course materials for Coursera Machine Learning Specialization
-
+###Assignments for Coursera Machine Learning: Regression course from the University of Washington.
 
 
 
