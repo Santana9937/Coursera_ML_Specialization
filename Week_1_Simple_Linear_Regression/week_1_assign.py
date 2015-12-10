@@ -96,6 +96,19 @@ print
 print 'The RSS of predicting Prices based on Square Feet is : ' + str(rss_prices_on_sqft)
 
 
+def inverse_regression_predictions(output, intercept, slope):
+    
+	estimated_feature = (output - intercept)/float(slope)
+
+	return estimated_feature
+
+
+my_house_price = 800000
+estimated_squarefeet = inverse_regression_predictions(my_house_price, sqft_intercept, sqft_slope)
+print
+print "The estimated squarefeet for a house worth $%.2f is %d" % (my_house_price, estimated_squarefeet)	
+
+
 print
 print 'Done!'
 
