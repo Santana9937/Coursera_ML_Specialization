@@ -76,6 +76,26 @@ print
 print "The estimated price for a house with %d squarefeet is $%.2f" % (my_house_sqft, estimated_price)
 
 
+
+def get_residual_sum_of_squares(input_feature, output, intercept, slope):
+    
+    # Vector of residuals for each observation i
+    residual_vect = output - (intercept + slope*input_feature)
+
+    # Squaring the residuals and adding them up
+    RSS = sum(residual_vect*residual_vect)
+
+    return(RSS)
+
+
+print    
+print get_residual_sum_of_squares(test_feature, test_output, test_intercept, test_slope) # should be 0.0
+
+rss_prices_on_sqft = get_residual_sum_of_squares(train_data['sqft_living'].values, train_data['price'].values, sqft_intercept, sqft_slope)
+print
+print 'The RSS of predicting Prices based on Square Feet is : ' + str(rss_prices_on_sqft)
+
+
 print
 print 'Done!'
 
