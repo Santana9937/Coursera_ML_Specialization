@@ -1,6 +1,6 @@
 ### Week 3 assignments for Coursera Machine Learning: Regression course from the University of Washington.
 
-### Ipython notebook for Assessing Performance of Polynomial Regression Model
+### Ipython notebook for Assessing Performance of Polynomial Regression Models
 
 http://nbviewer.ipython.org/github/Santana9937/Regression_ML_Specialization/blob/master/Week_3_Assessing_Performance/assign_1_polynomial-regression.ipynb
 
