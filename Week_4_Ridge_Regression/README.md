@@ -12,4 +12,12 @@ In this notebook, we will run ridge regression multiple times with different L2 
 * Choose best L2 penalty using cross-validation.
 * Assess the final fit using test data.
 
+http://nbviewer.ipython.org/github/Santana9937/Regression_ML_Specialization/blob/master/Week_4_Ridge_Regression/assign_2_ridge-regression.ipynb
+
+In this notebook, we will implement ridge regression via gradient descent. You will:
+* Convert an SFrame into a Numpy array
+* Write a Numpy function to compute the derivative of the regression weights with respect to a single feature
+* Write gradient descent function to compute the regression weights given an initial weight vector, step size, tolerance, and L2 penalty
+
+
 
